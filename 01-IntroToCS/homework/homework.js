@@ -11,8 +11,21 @@ function BinarioADecimal(num) {
        
     }
     return deci;
-}
 
+    /* 
+100 --> 100.lenght = 3
+1 -- 1*2** (2-0)
+1 -- 1*2**2
+
+0 -- 0*2** (2-1)
+0 -- 0*2**1
+
+0 -- 0*2** (2-2)
+0 -- 0*2**2
+
+*/
+}
+// return parseInt(num, 2) solucion rapida con la funcion prestablecida parseInt
 
 function DecimalABinario(num) {
   // tu codigo aca
