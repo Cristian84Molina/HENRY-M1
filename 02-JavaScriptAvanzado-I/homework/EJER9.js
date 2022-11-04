@@ -13,4 +13,4 @@ console.log(obj.prop.getFullname()); // imprime Aurelio De Rosa
 
 var test = obj.prop.getFullname;
 
-console.log(test()); // test no es una funcion
+console.log(test()); // deberia ir a buscar en el contexto global y es 'Juan Perez'

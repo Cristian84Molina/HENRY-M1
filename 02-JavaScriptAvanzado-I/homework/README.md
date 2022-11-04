@@ -34,9 +34,9 @@ console.log(x); // imprime 1
 
 ```javascript
 console.log(bar); // undefined
-console.log(baz);  //  no se ejecuta por que no esta 'baz' definida como variable
+console.log(baz);  //  no se ejecuta por que no esta 'baz' definida como variable y se rompe el codigo
 foo();
-function foo() { console.log('Hola!'); } 
+function foo() { console.log('Hola!'); }  //no se ejecuta por que se rompio en la linea 37
 var bar = 1;
 baz = 2; //  no esta definida como una variable, si no como un objeto global
 ```
@@ -154,7 +154,7 @@ console.log(obj.prop.getFullname()); // imprime ''Aurelio De Rosa
 
 var test = obj.prop.getFullname;
 
-console.log(test()); // imprime undefine por que test no esta definido como funcion
+console.log(test()); // deberia ir a buscar en el contexto global y es 'Juan Perez'
 ```
 
 ### Event loop
