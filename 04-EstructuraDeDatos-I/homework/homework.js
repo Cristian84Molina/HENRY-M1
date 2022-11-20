@@ -30,6 +30,9 @@ function nFibonacci(n) {
   return  nFibonacci (n-2) + nFibonacci (n-1);
 }
 
+
+
+
 /*
 Implementar la clase Queue, sabiendo que es una estructura de tipo FIFO, 
 donde el primer elemento que ingresa es el primero que se quita. Definir los siguientes métodos:
@@ -41,7 +44,7 @@ Pueden utilizar class o función constructora.
 */
 
 
-  class Queue {
+  /*class Queue {
     constructor (){
       this.newArray = [];
     }
@@ -54,9 +57,21 @@ Pueden utilizar class o función constructora.
     size(){
       return this.newArray.length;
     }
-  }
+  }*/
  
+function Queue() {
+  this.newArray = [];
+}
 
+Queue.prototype.size = function (){
+  return this.newArray.length;
+};
+Queue.prototype.enqueue = function (arg){
+  this.newArray.push(arg);
+};
+Queue.prototype.dequeue = function (){
+  return this.newArray.shift();
+};
 
 // No modifiquen nada debajo de esta linea
 // --------------------------------
